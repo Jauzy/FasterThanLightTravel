@@ -87,7 +87,7 @@
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="481.0" layoutY="426.0" prefHeight="75.0" prefWidth="336.0" text="Check your Balance before order the ticket." textFill="#8a8a8a" wrapText="true">
+      <Label layoutX="481.0" layoutY="426.0" prefHeight="75.0" prefWidth="336.0" text="Check your Balance before order a ticket." textFill="#8a8a8a" wrapText="true">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>

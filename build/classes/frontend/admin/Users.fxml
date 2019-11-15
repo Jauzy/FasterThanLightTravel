@@ -27,11 +27,11 @@
             <TableColumn fx:id="budget" prefWidth="138.0" style="label: #8a8a8a;" text="Budget" />
         </columns>
       </TableView>
-      <Label layoutX="45.0" layoutY="218.0" prefHeight="126.0" prefWidth="294.0" text="Displaying all users from database &quot;.......&quot;." textFill="#8a8a8a" wrapText="true">
+      <Label layoutX="45.0" layoutY="218.0" prefHeight="126.0" prefWidth="294.0" text="Displaying all users from database. This kind of user is common user that can only change details of its own and make transactions." textFill="#8a8a8a" wrapText="true">
          <font>
             <Font name="Segoe UI" size="12.0" />
          </font></Label>
-      <Label layoutX="45.0" layoutY="364.0" prefHeight="126.0" prefWidth="294.0" text="Connected to database &quot;.........&quot;, database status : online,  Connection Success" textFill="#8a8a8a" wrapText="true">
+      <Label layoutX="45.0" layoutY="364.0" prefHeight="126.0" prefWidth="294.0" text="Users can top up their budget but that kind of transaction will not recorded in the databases." textFill="#8a8a8a" wrapText="true">
          <font>
             <Font name="Segoe UI" size="12.0" />
          </font></Label>

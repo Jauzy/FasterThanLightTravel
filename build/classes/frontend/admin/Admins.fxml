@@ -26,11 +26,11 @@
           <TableColumn fx:id="name" prefWidth="251.0" text="Name" />
         </columns>
       </TableView>
-      <Label layoutX="45.0" layoutY="218.0" prefHeight="126.0" prefWidth="294.0" styleClass="labelNormal" text="Displaying All Admin from database &quot;.......&quot;" wrapText="true">
+      <Label layoutX="45.0" layoutY="218.0" prefHeight="126.0" prefWidth="294.0" styleClass="labelNormal" text="Displaying all admins details registered in the database. All admins listed in the table are verificated by the super admin." wrapText="true">
          <font>
             <Font name="Segoe UI" size="12.0" />
          </font></Label>
-      <Label layoutX="45.0" layoutY="364.0" prefHeight="126.0" prefWidth="294.0" styleClass="labelNormal" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, lacus sed tristique tempus, sem purus vehicula purus, at porta tortor mauris vel metus. Aenean tempor neque vitae nisi volutpat." wrapText="true">
+      <Label layoutX="45.0" layoutY="364.0" prefHeight="126.0" prefWidth="294.0" styleClass="labelNormal" text="An admin can't change another other admins details or it password. An admin can only change its own details and password." wrapText="true">
          <font>
             <Font name="Segoe UI" size="12.0" />
          </font></Label>

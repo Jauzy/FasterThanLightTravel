@@ -18,7 +18,9 @@ import frontend.Utility;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.NumberFormat;
 import java.time.LocalDate;
+import java.util.Locale;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -40,7 +42,7 @@ public class MakeTransactionFormController implements Initializable, MapComponen
     @FXML private TextField seat;
     @FXML private Label price;
     @FXML private Label warning;
-    @FXML private GoogleMapView mapView = new GoogleMapView();
+    @FXML private GoogleMapView mapView;
     private GoogleMap map;
     private boolean GMapToggle = false;
     
@@ -48,6 +50,7 @@ public class MakeTransactionFormController implements Initializable, MapComponen
     public void initialize(URL url, ResourceBundle rb) {
         mapView.setVisible(false);
         try {
+            mapView.setKey("AIzaSyAZT4BTDagvDaXOI3PETfqh77bLyEaU4CI");
             mapView.addMapInializedListener(this);
         } catch(Exception e){
             System.out.println("Something Wrong");
@@ -164,7 +167,7 @@ public class MakeTransactionFormController implements Initializable, MapComponen
                     .scaleControl(true)
                     .streetViewControl(false)
                     .zoomControl(true)
-                    .zoom(6);
+                    .zoom(8);
 
             map = mapView.createMap(mapOptions);
 
@@ -182,11 +185,11 @@ public class MakeTransactionFormController implements Initializable, MapComponen
             map.addMarker( destinationMarker );
 
             InfoWindowOptions infoWindowOptions = new InfoWindowOptions();
-            infoWindowOptions.content(String.format("<Strong>%s - %s</Strong><br>Distance : %.1f KM<br>Price : IDR %.1f", 
-                    from,dest,Math.ceil(start.distanceFrom(destination)/1000),price));
+            infoWindowOptions.content(String.format("<Strong>%s - %s</Strong><br>Distance : %.1f KM<br>Price : IDR %s", 
+                    from,dest,Math.ceil(start.distanceFrom(destination)/1000),String.valueOf(NumberFormat.getCurrencyInstance(Locale.US).format(price)).substring(1)));
 
-            InfoWindow fredWilkeInfoWindow = new InfoWindow(infoWindowOptions);
-            fredWilkeInfoWindow.open(map, startMarker);
+            InfoWindow popup = new InfoWindow(infoWindowOptions);
+            popup.open(map, startMarker);
         } catch(Exception e){
             System.out.println("Something wrong");
         }

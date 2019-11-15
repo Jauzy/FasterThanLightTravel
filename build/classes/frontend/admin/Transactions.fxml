@@ -33,7 +33,7 @@
             <TableColumn fx:id="price" prefWidth="82.0" text="Price" />
         </columns>
       </TableView>
-      <Label layoutX="27.0" layoutY="551.0" prefHeight="35.0" prefWidth="849.0" text="Displaying all transaction from database &quot;....&quot;" textFill="#8a8a8a" wrapText="true">
+      <Label layoutX="27.0" layoutY="551.0" prefHeight="35.0" prefWidth="849.0" text="Displaying all transactions from database based on user transaction." textFill="#8a8a8a" wrapText="true">
          <font>
             <Font name="Segoe UI" size="12.0" />
          </font>

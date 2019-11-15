@@ -9,6 +9,8 @@ import frontend.Utility;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -41,7 +43,7 @@ public class TopUpController implements Initializable {
                     res = db.query("SELECT * FROM user WHERE email='"+Database.email+"'");
                     if(res.next()){
                         user = new User(res.getString("email"), res.getString("name"), res.getString("password"), res.getDouble("budget"));
-                        budget.setText(String.format("IDR %.2f",user.getBudget()));
+                        budget.setText("IDR. "+String.valueOf(NumberFormat.getCurrencyInstance(Locale.US).format(user.getBudget())).substring(1));
                     }
                 }
             } catch (SQLException ex) {
@@ -64,7 +66,7 @@ public class TopUpController implements Initializable {
                 User user = new User(res.getString("email"), res.getString("name"), res.getString("password"), res.getDouble("budget"));
                 name.setText(user.getName());
                 email.setText(user.getEmail());
-                budget.setText(String.format("IDR %.2f",user.getBudget()));
+                budget.setText("IDR. "+String.valueOf(NumberFormat.getCurrencyInstance(Locale.US).format(user.getBudget())).substring(1));
             }
         } catch (SQLException ex) {
             Logger.getLogger(TopUpController.class.getName()).log(Level.SEVERE, null, ex);

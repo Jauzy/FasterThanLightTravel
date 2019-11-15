@@ -32,7 +32,7 @@
             <TableColumn fx:id="price" prefWidth="82.0" text="Price" />
         </columns>
       </TableView>
-      <Label layoutX="45.0" layoutY="218.0" prefHeight="126.0" prefWidth="111.0" text="Semua transaksi yang telah anda pesan. All of your transaction was recorded here." textFill="#8a8a8a" wrapText="true">
+      <Label layoutX="34.0" layoutY="218.0" prefHeight="126.0" prefWidth="122.0" text="All of your transactions was recorded in the database listed here. But your topup transaction will not listed here." textFill="#8a8a8a" wrapText="true">
          <font>
             <Font name="Segoe UI" size="12.0" />
          </font></Label>

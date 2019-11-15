@@ -31,7 +31,7 @@
       </TableView>
       <AnchorPane layoutX="45.0" layoutY="227.0">
          <children>
-            <Label layoutY="42.0" prefHeight="39.0" prefWidth="294.0" styleClass="labelNormal" text="Check new place based on Google Maps" wrapText="true" />
+            <Label layoutY="42.0" prefHeight="39.0" prefWidth="294.0" styleClass="labelNormal" text="Insert real place name and fill in the longitude and latitude below." wrapText="true" />
             <TextField fx:id="newName" layoutX="69.0" prefHeight="25.0" prefWidth="203.0" styleClass="transparentInput">
                <font>
                   <Font size="14.0" />
@@ -76,7 +76,7 @@
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Label>
-            <Label layoutY="108.0" prefHeight="39.0" prefWidth="294.0" styleClass="labelNormal" text="Longitude and Latitude of new place" wrapText="true" />
+            <Label layoutY="114.0" prefHeight="39.0" prefWidth="294.0" styleClass="labelNormal" text="Longitude and latitude or X and Y must be number that can be integer or floating point. See GMAP for coordinate." wrapText="true" />
          </children>
       </AnchorPane>
       <Button fx:id="submitBtn" layoutX="92.0" layoutY="506.0" mnemonicParsing="false" onAction="#submitBtnOnClick" prefHeight="30.0" prefWidth="200.0" styleClass="button-main" text="Submit" />

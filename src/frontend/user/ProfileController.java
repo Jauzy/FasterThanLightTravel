@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -54,7 +56,7 @@ public class ProfileController implements Initializable {
             if(res.next()){
                 name.setText(res.getString("name"));
                 email.setText(res.getString("email"));
-                budget.setText(String.valueOf(res.getDouble("budget")));
+                budget.setText("IDR. "+String.valueOf(NumberFormat.getCurrencyInstance(Locale.US).format(res.getDouble("budget"))).substring(1));
                 abbrevitiation.setText(String.valueOf(res.getString("name").charAt(0)));
             }
         } catch (SQLException ex) {

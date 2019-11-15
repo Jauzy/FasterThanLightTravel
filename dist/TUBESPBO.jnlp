@@ -8,13 +8,15 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="TUBESPBO.jar" size="158729" download="eager" />
+    <jar href="TUBESPBO.jar" size="157570" download="eager" />
     <jar href="lib\AnimateFX-1.2.0.jar" size="85823" download="eager" />
-    <jar href="lib\GMapsFX-2.10.0.jar" size="152296" download="eager" />
+    <jar href="lib\GMapsFX-2.12.0.jar" size="205548" download="eager" />
     <jar href="lib\controlsfx-8.40.15.jar" size="1402490" download="eager" />
     <jar href="lib\fontawesomefx-8.1.jar" size="179086" download="eager" />
     <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\slf4j-api-1.7.2.jar" size="26083" download="eager" />
+    <jar href="lib\slf4j-jdk14-1.7.2.jar" size="7845" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TUBESPBO" >
     <param name="requiredFXVersion" value="8.0+"/>
