@@ -1,0 +1,124 @@
+.bg-main {
+    -fx-background-color: #2E323B;
+}
+
+.button-outline-main {
+    -fx-border-color: #FFF;
+    -fx-background-color:#602080;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #FFF;
+}
+
+.button-outline-main:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #B030B0;
+}
+
+.sidebar {
+    -fx-background-color: #602080;
+}
+
+.labeLink {
+    -fx-text-fill: #fff;
+    -fx-background-color: transparent;
+}
+
+.labeLink:hover {
+    -fx-text-fill: #B030B0;
+    
+}
+
+.closeBtn {
+    -fx-fill: white;
+}
+
+.closeBtn:hover {
+    -fx-fill: #602080;
+}
+
+.icon {
+    -fx-fill: #BEBFC1;
+}
+
+.input {
+    -fx-text-fill : white;
+}
+
+.bgDashboard {
+    -fx-background-color: #F7F5F8
+}
+
+.sidebarDashboard {
+    -fx-background-color: #2C3038;
+    }
+
+.sidebarMenu {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.sidebarMenu:hover {
+    -fx-background-color: linear-gradient(from 0px 0px to 100px 100px,  #B030B0, #602080);
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+.button-main {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8a8a8a;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: #8a8a8a;
+    -fx-border-radius: 10px;
+}
+
+.button-main:hover {
+    -fx-background-color: linear-gradient(from 0px 0px to 100px 100px,  #B030B0, #602080);
+    -fx-border-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+}
+
+.transactionColumn {
+    -fx-background-color: #51DACF;
+}
+
+.choiceBox {
+    -fx-background-color: white;
+    -fx-border-color: #8A8A8A;
+    -fx-border-radius: 5px  
+}
+
+.transparentInput {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #8a8a8a;
+    -fx-border-radius: 10px;
+    -fx-text-fill: #8a8a8a
+}
+
+.labelNormal {
+    -fx-text-fill: #8a8a8a;
+}
+
+.table-view {
+    -fx-background-color: #E8E8E8;
+    -fx-background-radius: 20px 20px 0px 0px;
+    -fx-fill: white;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #602080;
+    -fx-background-radius: 30px;
+    -fx-background-insets: 0px 0px 10px 0px;
+    -fx-padding: 0px 0px 10px 0px;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+} 
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-padding: 10px
+}

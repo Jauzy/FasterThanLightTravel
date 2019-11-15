@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" styleClass="bgDashboard" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="680.0" prefWidth="300.0" styleClass="sidebarDashboard" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="180.0" prefWidth="300.0" style="-fx-background-color: #2B2B2B;" />
+            <HBox alignment="CENTER" layoutY="200.0" onMouseClicked="#profileOnClick" prefHeight="50.0" prefWidth="300.0" styleClass="sidebarMenu">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" iconName="USER" size="1.2em" />
+                  <Label text="Profile" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="250.0" onMouseClicked="#makeTransactionOnClick" prefHeight="50.0" prefWidth="300.0" styleClass="sidebarMenu">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" iconName="CART_PLUS" size="1.2em" />
+                  <Label text="Make Transaction" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="300.0" onMouseClicked="#historyTransactionOnClick" prefHeight="50.0" prefWidth="300.0" styleClass="sidebarMenu">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" iconName="BOOKMARK" size="1.2em" />
+                  <Label text="Transaction History" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="350.0" onMouseClicked="#topUpOnClick" prefHeight="50.0" prefWidth="300.0" styleClass="sidebarMenu">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" iconName="DOLLAR" size="1.2em" />
+                  <Label text="Top Up" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="logoutBtn" alignment="CENTER" layoutY="630.0" prefHeight="50.0" prefWidth="300.0" styleClass="sidebarMenu">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" iconName="POWER_OFF" size="1.2em" />
+                  <Label text="Log Out" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+           
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="680.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="33.0" layoutY="59.0" text="Book new tickes now easier than ever" />
+            <AnchorPane fx:id="contentPane" layoutY="110.0" prefHeight="550.0" prefWidth="700.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

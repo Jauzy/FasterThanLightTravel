@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.user.TransactionHistoryController">
+   <children>
+      <AnchorPane fx:id="header" prefHeight="120.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(from 0px 0px to 100px 100px,  #B030B0, #602080);">
+         <children>
+            <Label layoutX="67.0" layoutY="34.0" text="/User/TransactionHistory" textFill="WHITE" />
+            <Label layoutX="67.0" layoutY="51.0" text="Transaction History" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" iconName="BOOKMARK" layoutX="805.0" layoutY="81.0" size="5em" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="184.0" layoutY="148.0" prefHeight="400.0" prefWidth="691.0" style="-fx-background-color: #ECF4F3; -fx-border-color: #ECF4F3;">
+        <columns>
+          <TableColumn fx:id="transactionDate" prefWidth="127.0" text="Transaction Date" />
+          <TableColumn fx:id="id" prefWidth="109.0" text="Transaction ID" />
+            <TableColumn fx:id="date" prefWidth="78.0" text="Date" />
+            <TableColumn fx:id="from" prefWidth="77.0" text="From" />
+            <TableColumn fx:id="dest" prefWidth="100.0" text="Destination" />
+            <TableColumn fx:id="time" prefWidth="67.0" text="Time" />
+            <TableColumn fx:id="seat" prefWidth="49.0" text="Seat" />
+            <TableColumn fx:id="price" prefWidth="82.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="45.0" layoutY="218.0" prefHeight="126.0" prefWidth="111.0" text="Semua transaksi yang telah anda pesan. All of your transaction was recorded here." textFill="#8a8a8a" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="364.0" prefHeight="126.0" prefWidth="111.0" text="Apakah anda telah memesan tiket ? Pesan sekarang juga ! . Have you order any ticket ? Order now !" textFill="#8a8a8a" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.user.ProfileController">
+   <children>
+      <AnchorPane fx:id="header" prefHeight="120.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(from 0px 0px to 100px 100px,  #B030B0, #602080);">
+         <children>
+            <Label layoutX="67.0" layoutY="34.0" text="/UserProfile" textFill="WHITE" />
+            <Label layoutX="67.0" layoutY="51.0" text="User Profile" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" iconName="USER" layoutX="801.0" layoutY="81.0" size="5em" />
+         </children>
+      </AnchorPane>
+      <Circle fill="#602080" layoutX="161.0" layoutY="270.0" radius="100.0" stroke="#602080" strokeType="INSIDE" strokeWidth="0.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="308.0" layoutY="195.0" prefHeight="53.0" prefWidth="399.0">
+         <children>
+            <Label fx:id="name" text="Muhammad Abdurrahman Al Jauzy" textFill="#8a8a8a">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#8a8a8a" iconName="PENCIL" size="1.5em">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="308.0" layoutY="243.0" prefHeight="23.0" prefWidth="246.0">
+         <children>
+            <Label fx:id="email" text="joji@email.com" textFill="#8a8a8a">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#8a8a8a" iconName="PENCIL" size="1.2em">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <Label fx:id="budget" layoutX="574.0" layoutY="476.0" text="IDR 112.000,0" textFill="#8a8a8a">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="486.0" text="Your Budget" textFill="#8a8a8a">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="81.0" layoutY="198.0" prefHeight="115.0" prefWidth="161.0">
+         <children>
+            <Label fx:id="abbrevitiation" text="M" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="120.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00000091" offsetX="2.0" offsetY="2.0" />
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+      <JFXButton fx:id="changePasswordBtn" layoutX="308.0" layoutY="286.0" onAction="#changePasswordBtnOnClick" prefHeight="28.0" prefWidth="138.0" style="-fx-background-color: #E9E9E9;" stylesheets="@../style.css" text="Change Password" textFill="#8a8a8a">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

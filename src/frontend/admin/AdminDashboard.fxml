@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1200.0" styleClass="bgDashboard" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.admin.AdminDashboardController">
+   <left>
+      <AnchorPane prefHeight="680.0" prefWidth="300.0" styleClass="sidebarDashboard" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="180.0" prefWidth="300.0" style="-fx-background-color: #2B2B2B;">
+               <children>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="65.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../FTL.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <JFXButton fx:id="logoutBtn" layoutY="630.0" onAction="#logoutBtnOnClick" prefHeight="50.0" prefWidth="300.0" ripplerFill="TRANSPARENT" styleClass="sidebarMenu" text=" Log Out">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="POWER_OFF" size="1.2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="adminsBtn" layoutY="200.0" onAction="#adminsBtnOnClick" prefHeight="50.0" prefWidth="300.0" ripplerFill="TRANSPARENT" styleClass="sidebarMenu" text=" Admins">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="USER_SECRET" size="1.2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="usersBtn" layoutY="250.0" onAction="#usersBtnOnClick" prefHeight="50.0" prefWidth="300.0" ripplerFill="TRANSPARENT" styleClass="sidebarMenu" text=" Users">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="USERS" size="1.2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="placesBtn" layoutY="300.0" onAction="#placesBtnOnClick" prefHeight="50.0" prefWidth="300.0" ripplerFill="TRANSPARENT" styleClass="sidebarMenu" text=" Places">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="HOME" size="1.2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="transactionBtn" layoutY="350.0" onAction="#transactionBtnOnClick" prefHeight="50.0" prefWidth="300.0" ripplerFill="TRANSPARENT" styleClass="sidebarMenu" text=" Transactions">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="SHOPPING_CART" size="1.2em" />
+               </graphic>
+            </JFXButton>
+           
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="ContentPane" layoutY="66.0" prefHeight="600.0" prefWidth="900.0" />
+            <Label layoutX="17.0" layoutY="27.0" styleClass="labelNormal" text="You are a admin. How wonderfull sir !!">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

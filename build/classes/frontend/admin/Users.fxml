@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.admin.UsersController">
+   <children>
+      <AnchorPane fx:id="header" prefHeight="120.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(from 0px 0px to 100px 100px,  #B030B0, #602080);">
+         <children>
+            <Label layoutX="67.0" layoutY="34.0" text="/Admin/Users" textFill="WHITE" />
+            <Label layoutX="67.0" layoutY="51.0" text="Users" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" iconName="USERS" layoutX="805.0" layoutY="81.0" size="5em" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="383.0" layoutY="144.0" prefHeight="400.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="email" prefWidth="141.0" text="Email" />
+          <TableColumn fx:id="name" prefWidth="222.0" text="Name" />
+            <TableColumn fx:id="budget" prefWidth="138.0" style="label: #8a8a8a;" text="Budget" />
+        </columns>
+      </TableView>
+      <Label layoutX="45.0" layoutY="218.0" prefHeight="126.0" prefWidth="294.0" text="Displaying all users from database &quot;.......&quot;." textFill="#8a8a8a" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="364.0" prefHeight="126.0" prefWidth="294.0" text="Connected to database &quot;.........&quot;, database status : online,  Connection Success" textFill="#8a8a8a" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
