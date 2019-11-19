@@ -138,11 +138,15 @@ public class MakeTransactionFormController implements Initializable, MapComponen
                 int priceTag = (int) Math.ceil((fromP.comparePlace(destP)/2000) * 1000);
                 priceTag *= Integer.parseInt(seatT);
                 double budget = user.getBudget();
-                if(budget - priceTag > 0){
-                    user.addTransactions(LocalDate.now(), user.getEmail(), dateT, fromT, destT, timeT, Integer.parseInt(seatT),priceTag, budget);
-                    from.setValue(""); dest.setValue(""); time.setValue(""); seat.setText(""); date.setValue(null);
-                    warning.setText("Transaction Success");
-                } else warning.setText("You dont have enough budget, please topup.");
+                if(dateT.isAfter(LocalDate.now()) || dateT.equals(LocalDate.now())){
+                    if(budget - priceTag > 0){
+                        user.addTransactions(LocalDate.now(), user.getEmail(), dateT, fromT, destT, timeT, Integer.parseInt(seatT),priceTag, budget);
+                        from.setValue(""); dest.setValue(""); time.setValue(""); seat.setText(""); date.setValue(null);
+                        warning.setText("Transaction Success");
+                    } else warning.setText("You dont have enough budget, please topup.");
+                } else {
+                    warning.setText("You can't order ticket for the day before today");
+                }
             }
         } catch (SQLException ex) {
             System.out.println("SQL ERROR!!");

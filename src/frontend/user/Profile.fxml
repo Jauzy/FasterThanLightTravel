@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -31,11 +30,6 @@
                   <Font name="Segoe UI" size="24.0" />
                </font>
             </Label>
-            <FontAwesomeIcon fill="#8a8a8a" iconName="PENCIL" size="1.5em">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </FontAwesomeIcon>
          </children>
       </HBox>
       <HBox alignment="CENTER_LEFT" layoutX="308.0" layoutY="243.0" prefHeight="23.0" prefWidth="246.0">
@@ -45,11 +39,6 @@
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </Label>
-            <FontAwesomeIcon fill="#8a8a8a" iconName="PENCIL" size="1.2em">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </FontAwesomeIcon>
          </children>
       </HBox>
       <Label fx:id="budget" layoutX="574.0" layoutY="476.0" text="IDR 112.000,0" textFill="#8a8a8a">

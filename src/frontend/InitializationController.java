@@ -39,7 +39,7 @@ public class InitializationController implements Initializable {
         @Override
         public void run(){
             try {
-                Thread.sleep(1000);
+                Thread.sleep(3000);
                 Platform.runLater(() -> {
                     try {
                         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
