@@ -1,13 +1,14 @@
 package backend;
 
+import model.Database;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javafx.beans.property.SimpleStringProperty;
 
 public class Admin extends Account{
-    private User[] users;
-    private Admin[] admins; // agregasi
-    private Place[] places;
+    private User[] users; //agregasi
+    private Admin[] admins; //agregasi
+    private Place[] places; //agregasi
     
     public Admin (String email, String name, String password){
         super(email, name, true, password);

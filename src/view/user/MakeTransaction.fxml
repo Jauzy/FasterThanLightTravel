@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@../../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.user.MakeTransactionController">
+   <children>
+      <AnchorPane fx:id="header" prefHeight="120.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(from 0px 0px to 100px 100px,  #B030B0, #602080);">
+         <children>
+            <Label layoutX="67.0" layoutY="34.0" text="/User/MakeTransaction" textFill="WHITE" />
+            <Label layoutX="67.0" layoutY="51.0" text="Make Transaction" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" iconName="CART_PLUS" layoutX="800.0" layoutY="81.0" size="5em" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="contentPane" layoutY="120.0" prefHeight="480.0" prefWidth="900.0" />
+   </children>
+</AnchorPane>

@@ -7,6 +7,11 @@ public class Place implements Nameable{
     private Point coordinate;
     private SimpleStringProperty name;
     
+    public Place(){
+        this.name = new SimpleStringProperty("");
+        coordinate = new Point(0,0);
+    }
+    
     public Place(String name,double x,double y){
         this.name = new SimpleStringProperty(name);
         coordinate = new Point(x,y);

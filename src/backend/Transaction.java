@@ -6,15 +6,15 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class Transaction{
-    private LocalDate transactionDate;//    private Place start;
-    private SimpleIntegerProperty id;//    private Place dest;
-    private SimpleStringProperty email;//    private String date;
-    private SimpleStringProperty date;//    private float price;
-    private Place from;//    private int seatOrdered;
-    private Place dest;//    private int time;
-    private SimpleStringProperty time;//    private User[] user;
+    private LocalDate transactionDate;
+    private SimpleIntegerProperty id;
+    private SimpleStringProperty email;
+    private SimpleStringProperty date;
+    private Place from;
+    private Place dest;
+    private SimpleStringProperty time;
     private SimpleIntegerProperty seat;
-    private SimpleDoubleProperty price;//    
+    private SimpleDoubleProperty price;   
 
     public Transaction(LocalDate transactionDate, int id, String email, String date, Place from, Place dest, String time, int seat, double price) {
         this.transactionDate = transactionDate;

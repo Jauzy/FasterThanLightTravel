@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@../../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.TransactionsController">
+   <children>
+      <AnchorPane fx:id="header" prefHeight="120.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(from 0px 0px to 100px 100px,  #B030B0, #602080);">
+         <children>
+            <Label layoutX="67.0" layoutY="34.0" text="/Admin/Transactions" textFill="WHITE" />
+            <Label layoutX="67.0" layoutY="51.0" text="Transactions" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" iconName="SHOPPING_CART" layoutX="805.0" layoutY="81.0" size="5em" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="27.0" layoutY="144.0" prefHeight="397.0" prefWidth="849.0">
+        <columns>
+          <TableColumn fx:id="tranID" prefWidth="108.0" text="Transaction ID" />
+            <TableColumn fx:id="tranDate" prefWidth="121.0" text="Transaction Date" />
+            <TableColumn fx:id="email" prefWidth="116.0" text="User Email" />
+            <TableColumn fx:id="date" prefWidth="91.0" text="Date" />
+            <TableColumn fx:id="from" prefWidth="75.0" text="From" />
+            <TableColumn fx:id="dest" prefWidth="108.0" text="Destination" />
+            <TableColumn fx:id="time" prefWidth="64.0" text="Time" />
+            <TableColumn fx:id="seat" prefWidth="82.0" text="Seat" />
+            <TableColumn fx:id="price" prefWidth="82.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="27.0" layoutY="551.0" prefHeight="35.0" prefWidth="849.0" text="Displaying all transactions from database based on user transaction." textFill="#8a8a8a" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
