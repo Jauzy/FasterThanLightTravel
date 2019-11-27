@@ -36,7 +36,7 @@
          <font>
             <Font name="Segoe UI" size="12.0" />
          </font></Label>
-      <Label layoutX="45.0" layoutY="364.0" prefHeight="126.0" prefWidth="111.0" text="Apakah anda telah memesan tiket ? Pesan sekarang juga ! . Have you order any ticket ? Order now !" textFill="#8a8a8a" wrapText="true">
+      <Label layoutX="34.0" layoutY="364.0" prefHeight="126.0" prefWidth="122.0" text="Apakah anda telah memesan tiket ? Pesan sekarang juga ! . Have you order any ticket ? Order now !" textFill="#8a8a8a" wrapText="true">
          <font>
             <Font name="Segoe UI" size="12.0" />
          </font></Label>

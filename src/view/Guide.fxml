@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: transparent;" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GuideController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="500.0" style="-fx-background-radius: 5%; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 5%;" styleClass="sidebar">
+         <children>
+            <Label text="GUIDE" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label text="Pendaftaran" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="400.0" text="     Untuk melakukan pembelian tiket anda harus mendaftar terlebih dahulu, anda bisa memilih tombol register pada halaman Login. Isi nama, email, dan password anda. Lalu pilih &quot;Register&quot;. Jika memenuhi ketentuan maka anda telah terdaftar dan silahkan melakukan Login." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Melakukan Pemesanan" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="400.0" text="     Setelah anda login, anda dapat memesan tiket dengan memilih menu &quot;Make Transaction&quot;. Pada menu ini anda bisa memilih tanggal,tempat awal, tempat berhenti, waktu dan jumlah kursi yang akan dipesan.Anda bisa melihat harga dan jarak yang ditempuh dengan memilih tombol &quot;Check Price&quot;. Jika anda memiliki budget yang cukup maka anda bisa memilih tombol &quot;Checkout&quot;. Anda bisa melihat pesanan anda pada menu &quot;Transaction History&quot;." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Top Up" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="400.0" text="Jika anda kekurangan budget anda bisa isi saldo dengan memilih menu &quot;Top Up&quot;. Nilai yang anda masukkan akan disimpan pada database dan anda bisa mulai memesan tiket." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="CloseBtnOnClick" onAction="#CloseBtnOnClick" styleClass="button-outline-main" text="Close">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

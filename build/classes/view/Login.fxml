@@ -79,5 +79,20 @@
       <JFXButton fx:id="changeToRegister" layoutX="133.0" layoutY="368.0" onAction="#changeScene" styleClass="labeLink" text="Don't have account ? register." />
       <FontAwesomeIcon fill="WHITE" iconName="TIMES" layoutX="11.0" layoutY="27.0" onMouseClicked="#exit" size="1.5em" styleClass="closeBtn" />
       <Label fx:id="dangerLogin" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="351.0" textAlignment="CENTER" textFill="#eb7070" textOverrun="CENTER_ELLIPSIS" wrapText="true" />
+      <JFXButton layoutX="25.0" layoutY="451.0" onAction="#FAQBtnOnClick" styleClass="button-outline-main" text="FAQ">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="78.0" layoutY="451.0" onAction="#GuideBtnOnClick" styleClass="button-outline-main" text="Guide">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="142.0" layoutY="455.0" text="Copyright by Al - Jauzy and Syafiq" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

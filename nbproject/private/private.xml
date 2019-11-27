@@ -3,13 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/TP/TUBESPBO/src/backend/Transaction.java</file>
-            <file>file:/E:/TP/TUBESPBO/src/backend/Admin.java</file>
-            <file>file:/E:/TP/TUBESPBO/src/frontend/user/TransactionHistoryController.java</file>
-            <file>file:/E:/TP/TUBESPBO/src/backend/Place.java</file>
-            <file>file:/E:/TP/TUBESPBO/src/frontend/LRController.java</file>
-            <file>file:/E:/TP/TUBESPBO/src/Notes</file>
-            <file>file:/E:/TP/TUBESPBO/src/frontend/Lauch.java</file>
+            <file>file:/E:/TP/TUBESPBO/src/view/Guide.fxml</file>
+            <file>file:/E:/TP/TUBESPBO/src/controller/GuideController.java</file>
+            <file>file:/E:/TP/TUBESPBO/src/controller/LRController.java</file>
+            <file>file:/E:/TP/TUBESPBO/src/controller/FAQController.java</file>
         </group>
     </open-files>
 </project-private>

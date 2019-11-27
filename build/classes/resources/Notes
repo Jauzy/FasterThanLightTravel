@@ -45,3 +45,8 @@ COMPOSITION
 AGGREGATION
 - Admin to User
 - Admin to Places
+
+
+
+when to use simplestringproperty or etc,
+    when the variable is going to be observeable by other components, in these case is table

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: transparent;" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FAQController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="300.0" style="-fx-background-radius: 5%; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 5%;" styleClass="sidebar">
+         <children>
+            <Label text="FAQ" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="250.0" text="Q : Saya belum mempunya akun apa yang bisa saya lakukan untuk mendapatkannya ?" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="75.0" prefWidth="250.0" text="A : Anda bisa mendaftar terlebih dahulu dengan memilih  tombol registrasi pada menu Login,  lalu anda mengisi email, password dan username anda." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="250.0" text="Q : Saya telah memesan tiket, tetapi saya ingin membatalkan pemesanan." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="250.0" text="A : Tiket yang telah dipesan tidak bisa dibatalkan" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="250.0" text="Q : Tempat yang dituju belum ada, apakah ada cara saya menambahkan tempat ?" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="50.0" prefWidth="250.0" text="A : Anda dapat menghubungi admin untuk menambahkan tempat." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="CloseBtnOnClick" onAction="#CloseBtnOnClick" styleClass="button-outline-main" text="Close">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

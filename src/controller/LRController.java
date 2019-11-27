@@ -124,6 +124,18 @@ public class LRController implements Initializable {
         }
     }
     
+    @FXML
+    void FAQBtnOnClick(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/FAQ.fxml"));
+        utility.createPopUp(root);
+    }
+
+    @FXML
+    void GuideBtnOnClick(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/Guide.fxml"));
+        utility.createPopUp(root);
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
