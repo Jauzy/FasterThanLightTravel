@@ -1,4 +1,4 @@
-    package controller;
+package controller;
 
 import backend.Utility;
 import model.Database;
@@ -74,7 +74,7 @@ public class LRController implements Initializable {
                 db.update(sql);
                 //ganti window ke login
                 stage = (Stage) registerBtn.getScene().getWindow();
-                root = FXMLLoader.load(getClass().getResource("Login.fxml")); //load file
+                root = FXMLLoader.load(getClass().getResource("/view/Login.fxml")); //load file
                 utility.changeWindow(stage, root);
             } catch(SQLException e){
                 System.out.println("SQL ERROR!!");
